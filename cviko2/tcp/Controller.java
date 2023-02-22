@@ -16,7 +16,7 @@ public class Controller extends Thread {
     public void run () {
         System.out.println("START");
         try {
-            InetAddress addr = InetAddress.getByName("192.168.56.1");
+            InetAddress addr = InetAddress.getByName("158.195.28.155");
             System.out.println("addr = " + addr);
             Socket socket = new Socket(addr,PORT);
             System.out.println("socket = " + socket);
