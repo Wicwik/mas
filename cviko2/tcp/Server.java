@@ -39,7 +39,7 @@ public class Server extends Thread {
             }
             
             if (j == 2) {
-                while(!move);
+                while(!move) System.out.println(move);
 
                 for (int i = 0; i < 100; i++) {
                     float x = in.readFloat();
