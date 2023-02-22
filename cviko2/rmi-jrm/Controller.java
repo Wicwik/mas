@@ -17,13 +17,18 @@ public class Controller extends Thread {
     public void run () {
         System.out.println("START");
         try {
-            //System.setProperty("java.rmi.server.hostname", "158.195.28.151");
-            Registry registry = LocateRegistry.getRegistry("localhost"); // on 1099
-            Space space = (Space) registry.lookup("SPACE"); // any port
+            System.setProperty("java.rmi.server.hostname", "158.195.28.155");
+            Registry registry = LocateRegistry.getRegistry("158.195.28.155"); // on 1099
+            System.out.println("REGISTRY FOUND");
+            Space space = (Space) registry.lookup("//158.195.28.155:7171/SPACE");  // any port
+            System.out.println("SPACE FOUND");
             for (;;) {
                 Float vx = (Float) space.read("vx");
+                System.out.println("vx");
                 Float vy = (Float) space.read("vy");
+                System.out.println("vy");
                 Float vz = (Float) space.read("vz");
+                System.out.println("vz");
                 float x = scene.getPosX();
                 float y = scene.getPosY();
                 float z = scene.getPosZ();

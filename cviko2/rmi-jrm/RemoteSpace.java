@@ -37,21 +37,21 @@ public class RemoteSpace implements Space {
     }
 
     public static void main(String args[]) {
-//		System.setProperty("java.rmi.server.hostname", "158.195.28.151");
-//		System.out.println("preferred server ip set");
+		System.setProperty("java.rmi.server.hostname", "158.195.28.155");
+		System.out.println("preferred server ip set");
         try {
             RemoteSpace obj = new RemoteSpace();
             System.out.println("distributed object created");
 
-            Space stub = (Space) UnicastRemoteObject.exportObject(obj, 0);  // on any free port
-//			Space stub = (Space) UnicastRemoteObject.exportObject(obj, 7171); // on port 7171
+            // Space stub = (Space) UnicastRemoteObject.exportObject(obj, 0);  // on any free port
+			Space stub = (Space) UnicastRemoteObject.exportObject(obj, 7171); // on port 7171
             System.out.println("skeleton created");
 
             Registry registry = LocateRegistry.getRegistry();
             System.out.println("registry created");
 
-            registry.rebind("SPACE", stub);
-//			registry.rebind("//158.195.28.151:7171/SPACE", stub);
+            // registry.rebind("SPACE", stub);
+			registry.rebind("//158.195.28.155:7171/SPACE", stub);
 
             System.err.println("Server ready");
         } catch (Exception e) {
