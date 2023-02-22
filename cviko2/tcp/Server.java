@@ -9,7 +9,7 @@ public class Server extends Thread {
 
     public Server (Socket socket) {
         j = ++i;
-        this.socket = socket;
+        this.socket = socket; 
         System.out.println("thread "+j+" started");
         start();
     }
@@ -20,17 +20,36 @@ public class Server extends Thread {
             DataInputStream in = new DataInputStream(socket.getInputStream());
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
             System.out.println("connected");
-            for (;;) {
-                float x = in.readFloat();
-                float y = in.readFloat();
-                float z = in.readFloat();
-                x += 0.1f;
-                System.out.println("TICK "+x);
-                out.writeFloat(x);
-                out.writeFloat(y);
-                out.writeFloat(z);
-                if (1 != 1) break; //dummy
+
+            if (j == 1) {
+                for (int i = 0; i < 100; i++) {
+                    float x = in.readFloat();
+                    float y = in.readFloat();
+                    float z = in.readFloat();
+                    x += 0.1f;
+                    System.out.println("TICK "+x);
+                    out.writeFloat(x);
+                    out.writeFloat(y);
+                    out.writeFloat(z);
+                    sleep(10);
+                }
             }
+            
+            if (j == 2) {
+                sleep(10000);
+                for (int i = 0; i < 100; i++) {
+                    float x = in.readFloat();
+                    float y = in.readFloat();
+                    float z = in.readFloat();
+                    x += 0.1f;
+                    System.out.println("TICK "+x);
+                    out.writeFloat(x);
+                    out.writeFloat(y);
+                    out.writeFloat(z);
+                    sleep(10);
+                }
+         }
+
             System.out.println("closing connection "+j);
             socket.close();
         } catch (Exception ee) {
@@ -44,15 +63,15 @@ public class Server extends Thread {
         try {
             ServerSocket s = new ServerSocket(port);
             System.out.println("Started listening on port "+port+" : " + s);
-//			for (;;) {
+			for (;;) {
             try {
                 Socket socket = s.accept();
                 new Server(socket);
             } catch (Exception ee) {
                 System.out.println(ee);
-//	  			break;
+	  			break;
             }
-//	  	}
+	  	}
             s.close();
         } catch (Exception ee) {
             System.out.println(ee);
