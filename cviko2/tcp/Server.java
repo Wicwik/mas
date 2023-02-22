@@ -3,6 +3,7 @@ import java.net.*;
 
 public class Server extends Thread {
     static int i=0;
+    static boolean move = false;
 
     private int j;
     private Socket socket;
@@ -33,10 +34,13 @@ public class Server extends Thread {
                     out.writeFloat(z);
                     sleep(10);
                 }
+
+                move = true;
             }
             
             if (j == 2) {
-                sleep(10000);
+                while(!move);
+
                 for (int i = 0; i < 100; i++) {
                     float x = in.readFloat();
                     float y = in.readFloat();
@@ -48,7 +52,7 @@ public class Server extends Thread {
                     out.writeFloat(z);
                     sleep(10);
                 }
-         }
+            }
 
             System.out.println("closing connection "+j);
             socket.close();
