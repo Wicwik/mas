@@ -1,4 +1,4 @@
 @echo off
 
-"c:\Program Files\Java\jdk1.8.0_231\bin\java" Marshall
+"c:\Program Files\Java\jdk-18\bin\java" Marshall
 pause

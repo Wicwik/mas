@@ -13,6 +13,8 @@ import org.xith3d.scenegraph.*;
 import org.xith3d.scenegraph.primitives.*;
 import org.xith3d.schedops.movement.*;
 
+import java.io.*;
+
 public class Scene extends InputAdapterRenderLoop {
 
     public static Scene scene = null;
@@ -123,9 +125,54 @@ public class Scene extends InputAdapterRenderLoop {
 
     public static void main( String[] args ) {
         initialize();
-		new Gulka(1,0.1f);
-		new Gulka(2,-0.1f);
-		delay(10000);
+
+        Gulka g1 = null, g2 = null;
+
+        File f = new File("./gulky.save");
+        if(f.exists() && !f.isDirectory()) {
+            try {
+                FileInputStream inputByteStream = new FileInputStream("./gulky.save");
+                ObjectInputStream demarshaller = new ObjectInputStream(inputByteStream);
+
+                g1 = (Gulka) demarshaller.readObject();
+                g2 = (Gulka) demarshaller.readObject();
+
+                inputByteStream.close();
+            } catch (FileNotFoundException e) {
+                System.out.println("File not found");
+            } catch (IOException e) {
+                System.out.println("Error initializing stream");
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+
+            g1.start();
+            g2.start();
+
+        }
+
+        if (g1 == null || g2 == null) {
+            g1 = new Gulka(1,0.1f);
+		    g2 = new Gulka(2,-0.1f);
+        }
+
+		delay(2500);
+
+        try {
+            FileOutputStream outputByteStream = new FileOutputStream("./gulky.save");
+            ObjectOutputStream marshaller = new ObjectOutputStream(outputByteStream);
+            marshaller.writeObject(g1);
+            marshaller.writeObject(g2);
+
+            outputByteStream.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found");
+        } catch (IOException e) {
+            System.out.println("Error initializing stream");
+        }
+
+        delay(7500);
+
         System.exit(0);
     }
 

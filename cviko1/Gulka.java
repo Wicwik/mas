@@ -1,7 +1,8 @@
 import java.io.*;
 
-public class Gulka extends Thread {
+public class Gulka extends Thread implements Serializable {
 
+	public static final long serialVersionUID = 112132444L;
 	public int desc;
     public float v;
 
@@ -21,6 +22,7 @@ public class Gulka extends Thread {
 			}
 			
             Scene.setPos(desc,Scene.getPosX(desc)+v,Scene.getPosY(desc),Scene.getPosZ(desc));
+
 			Scene.delay(100);
         }
 	}
