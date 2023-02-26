@@ -21,6 +21,24 @@ public class RemoteSpace implements Space {
         return obj;
     }
 
+    public Serializable blockingRead (Serializable key) throws RemoteException {
+        for (;;) {
+            if (h.containsKey(key)) {
+                Serializable obj = h.get(key);
+                System.out.println("\nblockingRead   " + key + " = " + obj + this);
+                return obj;
+            }
+            else {
+                try {
+                    System.out.println("\nblockingRead sleep...");
+                    Thread.sleep(100);
+                } catch (InterruptedException ee) {
+                }
+            }
+        }
+    }
+
+
     public void delete (Serializable key) throws RemoteException {
         h.remove(key);
         System.out.println("\ndelete " + key + this);
@@ -37,7 +55,7 @@ public class RemoteSpace implements Space {
     }
 
     public static void main(String args[]) {
-		System.setProperty("java.rmi.server.hostname", "158.195.28.155");
+		System.setProperty("java.rmi.server.hostname", "192.168.100.21");
 		System.out.println("preferred server ip set");
         try {
             RemoteSpace obj = new RemoteSpace();
@@ -51,7 +69,7 @@ public class RemoteSpace implements Space {
             System.out.println("registry created");
 
             // registry.rebind("SPACE", stub);
-			registry.rebind("//158.195.28.155:7171/SPACE", stub);
+			registry.rebind("//192.168.100.21:7171/SPACE", stub);
 
             System.err.println("Server ready");
         } catch (Exception e) {

@@ -17,12 +17,17 @@ public class Controller extends Thread {
     public void run () {
         System.out.println("START");
         try {
-            System.setProperty("java.rmi.server.hostname", "158.195.28.155");
-            Registry registry = LocateRegistry.getRegistry("158.195.28.155"); // on 1099
+            System.setProperty("java.rmi.server.hostname", "192.168.100.21");
+            Registry registry = LocateRegistry.getRegistry("192.168.100.21"); // on 1099
             System.out.println("REGISTRY FOUND");
-            Space space = (Space) registry.lookup("//158.195.28.155:7171/SPACE");  // any port
+            Space space = (Space) registry.lookup("//192.168.100.21:7171/SPACE");  // any port
             System.out.println("SPACE FOUND");
-            for (;;) {
+
+            System.out.println("blocking read");
+
+            boolean run = (Boolean) space.blockingRead("run");
+
+            while (run) {
                 Float vx = (Float) space.read("vx");
                 System.out.println("vx");
                 Float vy = (Float) space.read("vy");

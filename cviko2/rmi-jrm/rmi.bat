@@ -1,2 +1,2 @@
-"c:\Program Files\Java\jdk1.8.0_231\bin\rmiregistry.exe"
+"c:\Program Files\Java\jdk-18\bin\rmiregistry.exe"
 pause
