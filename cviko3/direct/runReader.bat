@@ -1,0 +1,2 @@
+"c:\Program Files\Java\jdk1.8.0_231\bin\java" -classpath .;xercesimpl.jar -Dorg.xml.sax.parser="org.apache.xerces.parsers.SAXParser" jade.Boot -local-host 158.195.28.155 -nomtp -gui -aclcodecs jamr.jadeacl.xml.XMLACLCodec Reader:ObjectReaderAgent
+pause
