@@ -52,18 +52,18 @@ protected void setup() {
       ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
       msg.addReceiver(reader);
 
-      msg.setContentObject(p);
-      msg.setLanguage("JavaSerialization");
-      send(msg);
-      System.out.println(getLocalName()+" sent msg "+msg);
+      // msg.setContentObject(p);
+      // msg.setLanguage("JavaSerialization");
+      // send(msg);
+      // System.out.println(getLocalName()+" sent msg "+msg);
 
-/*
+
       msg.setDefaultEnvelope();
       msg.setLanguage("StringLanguage");
       msg.setContent(p.toString());
       send(msg);
       System.out.println(getLocalName()+" sent msg with string codec "+msg);
-*/
+
 
 /*
 			XMLCodec codec = new XMLCodec();
