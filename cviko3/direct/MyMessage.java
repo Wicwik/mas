@@ -3,14 +3,14 @@ import java.util.Date;
 
 public class MyMessage implements Serializable {
 
-	String content;
+    String content;
 
-	MyMessage (String content) {
-		this.content = content;
-	}
+    MyMessage (String content) {
+        this.content = content;
+    }
 
-	public String toString() {
-		return(content);
-	}
-  
+    public String toString() {
+        return(content);
+    }
+
 }
