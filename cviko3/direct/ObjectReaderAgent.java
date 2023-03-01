@@ -4,6 +4,7 @@ import jade.core.Agent;
 import jade.domain.FIPAAgentManagement.*;
 import jade.domain.FIPAException;
 import jade.domain.DFService;
+import jade.core.behaviours.*;
 
 import java.io.*;
 
@@ -34,8 +35,11 @@ public class ObjectReaderAgent extends Agent {
         }
         System.out.println(getLocalName()+ " succeeded in registration with DF");
 
-        for (;;) {
-            try {
+ 
+        addBehaviour(
+        new CyclicBehaviour() {
+          public void action() {
+               try {
 
                 System.out.println(getLocalName()+" is waiting for a message");
                 ACLMessage msg = blockingReceive();
@@ -55,7 +59,9 @@ public class ObjectReaderAgent extends Agent {
             } catch(UnreadableException e3) {
                 System.err.println(getLocalName()+ " catched exception "+e3.getMessage());
             }
-        }
+          }
+          }
+        );
     }
 
     public void takeDown() {
