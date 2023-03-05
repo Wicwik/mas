@@ -24,7 +24,7 @@ public class BallAgent extends Agent {
         addBehaviour(
         new TickerBehaviour(this,200) {
             public void onTick () {
-                System.out.println("tick 1");
+                // System.out.println("tick 1");
                 if (!scene.available()) return;
                 ScenePos pos = new ScenePos(aid.getName(),scene.getPosX(),scene.getPosY(),scene.getPosZ());
                 if (last == null) {
@@ -43,7 +43,7 @@ public class BallAgent extends Agent {
         addBehaviour(
         new TickerBehaviour (this,200) {
             public void onTick () {
-                System.out.println("tick 2");
+                // System.out.println("tick 2");
                 if (!scene.available()) return;
                 ScenePos pos = receiveMessage();
                 if (pos != null) {
@@ -65,11 +65,15 @@ public class BallAgent extends Agent {
         dfd.setName(aid);
         //dfd.addOntologies("Ball_Moving");
         try {
-            //DFService.deregister(this,dfd);
-            DFService.register(this,dfd);
-        } catch (FIPAException e) {
-            System.err.println(getLocalName()+" registration with DF unsucceeded. Reason: "+e.getMessage());
-            doDelete();
+            DFService.deregister(this,dfd);
+        } catch (FIPAException e_deregister) {
+            System.err.println(getLocalName()+" Cannot deregister. Reason: "+e_deregister.getMessage());
+            try {
+                DFService.register(this,dfd);
+            } catch (FIPAException e) {
+                System.err.println(getLocalName()+" registration with DF unsucceeded. Reason: "+e.getMessage());
+                doDelete();
+            }
         }
         System.out.println(getLocalName()+ " succeeded in registration with DF");
     }
