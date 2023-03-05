@@ -1,4 +1,0 @@
-1. BranchGroup z toho idu dva TransformGroup, ktore maju sphere1 a sphere2
-2. Thread
-3. descriptor
-4. v subore xith.jar
