@@ -1,0 +1,18 @@
+<web-app>
+
+<servlet>
+<servlet-name>a</servlet-name>
+<servlet-class>A</servlet-class>
+<init-param>
+	<param-name>readonly</param-name>
+	<param-value>false</param-value>
+</init-param>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>a</servlet-name>
+<url-pattern>/a</url-pattern>
+<http-method>POST</http-method>
+</servlet-mapping>
+
+</web-app>

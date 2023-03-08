@@ -1,0 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" href="my.css" type="text/css"/>
+<script language="javascript">
+function rpc() {
+	var req = new XMLHttpRequest(); 
+	req.open("POST", "http://localhost:8080/a?arg="+document.f.a.value, true);
+	req.onload = function() {
+		alert(this.responseText);
+		eval(this.responseText);
+		document.f.a.value=a;
+	}
+	//req.send();
+	req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	req.send("name=ahoj");
+}
+</script>
+</head>
+<body>
+<form name="f">
+<input type="text" size="10" name="a" id="b" value="1" />
+<input type="button" value="call" onClick="rpc()"/>
+</form>
+</body>
+</html>

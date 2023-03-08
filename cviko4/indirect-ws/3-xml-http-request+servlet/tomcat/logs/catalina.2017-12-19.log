@@ -1,0 +1,150 @@
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.73
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Nov 7 2016 21:27:23 UTC
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.73.0
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows Vista
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.0
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             c:\java\jre
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.7.0_10-b18
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         c:\andy\demo\tomcat
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         c:\andy\demo\tomcat
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=c:\andy\demo\tomcat\conf\logging.properties
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=c:\andy\demo\tomcat\endorsed
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=c:\andy\demo\tomcat
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=c:\andy\demo\tomcat
+dec 19, 2017 2:35:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=c:\andy\demo\tomcat\temp
+dec 19, 2017 2:35:38 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: c:\java\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;c:\Java\bin\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\ImageMagick-6.8.7-Q16;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Perl64\site\bin;C:\Perl64\bin;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\cvsnt;C:\Program Files\doxygen\bin;C:\Program Files (x86)\PDFtk\bin\;C:\tesseract;c:\cygwin\bin;c:\opencv31\install\x86\vc10\bin;c:\VTK-7.0.0\install\bin;m:\_Output\bin\;c:\Program Files (x86)\robotology\yarp-2.3.66\bin;c:\pthreads-w32\Pre-built.2\dll\x86;c:\Program Files (x86)\robotology\ACE-6.2.7_v10_x86\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Skype\Phone\;C:\Ruby22\bin;c:\Program Files (x86)\CodeBlocks\MinGW\bin\;C:\opencv\install\bin;C:\octave\bin;c:\Program Files (x86)\netcat;c:\Qt\Qt5.0.2\5.0.2\mingw47_32\bin\;c:\Python27;c:\java\bin;c:\opencv31\install\x86\vc10\bin;c:\opencv32\install\x86\vc10\bin;c:\tesseract;C:\robotology\ipopt-3.10.1\bin;C:\robotology\opencv-2.4.9\x86\vc10\bin;C:\robotology\sdl-1.2.13\lib;C:\robotology\glut-3.7.6;m:\_Output\bin;c:\cygwin\bin;C:\Program Files (x86)\robotology\yarp-2.3.66\bin;C:\Program Files (x86)\robotology\ACE-6.2.7_v10_x86\bin;C:\Program Files (x86)\robotology\gtkmm-2.22.0_x86\bin;C:\Program Files (x86)\robotology\Qt-5.4.1_v10_x86\bin;C:\Program Files (x86)\robotology\icub-1.4.0\bin;C:\Program Files (x86)\robotology\ipopt-3.11.7\bin;C:\Program Files (x86)\robotology\opencv-2.4.9\x86\vc10\bin;C:\Program Files (x86)\robotology\sdl-1.2.15\lib;C:\Program Files (x86)\robotology\glut-3.7.6;c:\opencv31\install\x86\vc10\bin;c:\pthreads-w32\Pre-built.2\dll\x86;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\PuTTY\;c:\opencv32\bin;.
+dec 19, 2017 2:35:40 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+dec 19, 2017 2:35:40 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+dec 19, 2017 2:35:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 4606 ms
+dec 19, 2017 2:35:40 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+dec 19, 2017 2:35:40 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.73
+dec 19, 2017 2:35:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\docs
+dec 19, 2017 2:35:42 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [340] milliseconds.
+dec 19, 2017 2:35:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\docs has finished in 1,974 ms
+dec 19, 2017 2:35:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\examples
+dec 19, 2017 2:35:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\examples has finished in 3,452 ms
+dec 19, 2017 2:35:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\host-manager
+dec 19, 2017 2:35:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\host-manager has finished in 181 ms
+dec 19, 2017 2:35:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\manager
+dec 19, 2017 2:35:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\manager has finished in 200 ms
+dec 19, 2017 2:35:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\ROOT
+dec 19, 2017 2:35:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\ROOT has finished in 196 ms
+dec 19, 2017 2:35:46 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+dec 19, 2017 2:35:47 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+dec 19, 2017 2:35:47 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6419 ms
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.73
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Nov 7 2016 21:27:23 UTC
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.73.0
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows Vista
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.0
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             c:\java\jre
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.7.0_10-b18
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         c:\andy\demo\tomcat
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         c:\andy\demo\tomcat
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=c:\andy\demo\tomcat\conf\logging.properties
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=c:\andy\demo\tomcat\endorsed
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=c:\andy\demo\tomcat
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=c:\andy\demo\tomcat
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=c:\andy\demo\tomcat\temp
+dec 19, 2017 2:38:30 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: c:\java\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;c:\Java\bin\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\ImageMagick-6.8.7-Q16;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Perl64\site\bin;C:\Perl64\bin;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\cvsnt;C:\Program Files\doxygen\bin;C:\Program Files (x86)\PDFtk\bin\;C:\tesseract;c:\cygwin\bin;c:\opencv31\install\x86\vc10\bin;c:\VTK-7.0.0\install\bin;m:\_Output\bin\;c:\Program Files (x86)\robotology\yarp-2.3.66\bin;c:\pthreads-w32\Pre-built.2\dll\x86;c:\Program Files (x86)\robotology\ACE-6.2.7_v10_x86\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Skype\Phone\;C:\Ruby22\bin;c:\Program Files (x86)\CodeBlocks\MinGW\bin\;C:\opencv\install\bin;C:\octave\bin;c:\Program Files (x86)\netcat;c:\Qt\Qt5.0.2\5.0.2\mingw47_32\bin\;c:\Python27;c:\java\bin;c:\opencv31\install\x86\vc10\bin;c:\opencv32\install\x86\vc10\bin;c:\tesseract;C:\robotology\ipopt-3.10.1\bin;C:\robotology\opencv-2.4.9\x86\vc10\bin;C:\robotology\sdl-1.2.13\lib;C:\robotology\glut-3.7.6;m:\_Output\bin;c:\cygwin\bin;C:\Program Files (x86)\robotology\yarp-2.3.66\bin;C:\Program Files (x86)\robotology\ACE-6.2.7_v10_x86\bin;C:\Program Files (x86)\robotology\gtkmm-2.22.0_x86\bin;C:\Program Files (x86)\robotology\Qt-5.4.1_v10_x86\bin;C:\Program Files (x86)\robotology\icub-1.4.0\bin;C:\Program Files (x86)\robotology\ipopt-3.11.7\bin;C:\Program Files (x86)\robotology\opencv-2.4.9\x86\vc10\bin;C:\Program Files (x86)\robotology\sdl-1.2.15\lib;C:\Program Files (x86)\robotology\glut-3.7.6;c:\opencv31\install\x86\vc10\bin;c:\pthreads-w32\Pre-built.2\dll\x86;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files (x86)\PuTTY\;c:\opencv32\bin;.
+dec 19, 2017 2:38:30 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+dec 19, 2017 2:38:30 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 798 ms
+dec 19, 2017 2:38:30 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+dec 19, 2017 2:38:30 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.73
+dec 19, 2017 2:38:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\docs
+dec 19, 2017 2:38:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\docs has finished in 561 ms
+dec 19, 2017 2:38:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\examples
+dec 19, 2017 2:38:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\examples has finished in 501 ms
+dec 19, 2017 2:38:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\host-manager
+dec 19, 2017 2:38:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\host-manager has finished in 90 ms
+dec 19, 2017 2:38:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\manager
+dec 19, 2017 2:38:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\manager has finished in 65 ms
+dec 19, 2017 2:38:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\andy\demo\tomcat\webapps\ROOT
+dec 19, 2017 2:38:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\andy\demo\tomcat\webapps\ROOT has finished in 117 ms
+dec 19, 2017 2:38:32 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+dec 19, 2017 2:38:32 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+dec 19, 2017 2:38:32 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1429 ms

@@ -1,0 +1,12 @@
+apt-get install
+default-jdk
+tomcat7
+tomcat7-admin tomcat7-examples tomcat7-docs
+
+/etc/tomcat7/tomcat-users.xml
+<tomcat-users>
+    <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+</tomcat-users>
+
+/var/lib/tomcat7/webapps/ROOT/WEB-INF/classes
+
