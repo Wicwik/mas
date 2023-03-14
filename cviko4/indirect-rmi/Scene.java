@@ -17,6 +17,7 @@ import org.xith3d.schedops.movement.*;
 public class Scene extends InputAdapterRenderLoop implements MouseListener {
 	
 	private TransformGroup trans;
+	public boolean mouse = false;
 	
 	public void setPos ( float x, float y, float z ) {
 		trans.setTransform(new Transform3D(x,y,z));
@@ -58,9 +59,11 @@ public class Scene extends InputAdapterRenderLoop implements MouseListener {
 	public void onMouseButtonReleased(MouseButtonReleasedEvent e, MouseButton button) {}
 	public void onMouseButtonStateChanged(MouseButtonEvent e, MouseButton button, boolean state) {}
 	public void onMouseMoved(MouseMovedEvent e, int x, int y, int dx, int dy) {
-		if (e.getMouse().getButtonsState() != 0)
+		if (e.getMouse().getButtonsState() != 0) {
+			mouse = true;
 			//System.out.println(dx+","+dy);
 			setPos(getPosX()+dx/100.0f,getPosY()-dy/100.0f,getPosZ());
+		}
 	}
 	public void onMouseWheelMoved(MouseWheelEvent e, int wheelDelta) {}	
 

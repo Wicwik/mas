@@ -10,7 +10,7 @@ public abstract class Agent extends Thread {
 
 	public Agent () {
 		monitor = new Object();
-		space = new LocalSpace("localhost");
+		space = new LocalSpace("192.168.100.21");
         System.out.println(space);
         System.out.println("initialized");
 		timer = null;
